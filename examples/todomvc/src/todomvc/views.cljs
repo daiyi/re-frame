@@ -7,8 +7,9 @@
   (let [val (reagent/atom title)
         stop #(do (reset! val "")
                   (when on-stop (on-stop)))
-        save #(let [v (-> @val str clojure.string/trim)]
-               (when (seq v) (on-save v))
+        save #(let [v (-> @val str clojure.string/trim) time (first (.split (.toTimeString (js/Date.)) " "))]
+               (when (seq v)
+                (on-save v time))
                (stop))]
     (fn [props]
       [:input (merge props
@@ -26,7 +27,7 @@
 (defn todo-item
   []
   (let [editing (reagent/atom false)]
-    (fn [{:keys [id done title]}]
+    (fn [{:keys [id done title time]}]
       [:li {:class (str (when done "completed ")
                         (when @editing "editing"))}
         [:div.view
@@ -37,13 +38,16 @@
           [:label
             {:on-double-click #(reset! editing true)}
             title]
+          [:span
+            {:class "last-saved-time"}
+            time]
           [:button.destroy
             {:on-click #(dispatch [:delete-todo id])}]]
         (when @editing
           [todo-input
             {:class "edit"
              :title title
-             :on-save #(dispatch [:save id %])
+             :on-save #(dispatch [:save id %1 %2])
              :on-stop #(reset! editing false)}])])))
 
 
@@ -89,8 +93,8 @@
     [:h1 "todos"]
     [todo-input
       {:id "new-todo"
-       :placeholder "What needs to be done?"
-       :on-save #(dispatch [:add-todo %])}]])
+       :placeholder "today is going to be productive!"
+       :on-save #(dispatch [:add-todo %1 %2])}]])
 
 
 (defn todo-app

@@ -21,8 +21,9 @@
 
 (s/def ::id int?)
 (s/def ::title string?)
+(s/def ::time string?)
 (s/def ::done boolean?)
-(s/def ::todo (s/keys :req-un [::id ::title ::done]))
+(s/def ::todo (s/keys :req-un [::id ::title ::time ::done]))
 (s/def ::todos (s/and                                       ;; should use the :kind kw to s/map-of (not supported yet)
                  (s/map-of ::id ::todo)                     ;; in this map, each todo is keyed by its :id
                  #(instance? PersistentTreeMap %)           ;; is a sorted-map (not just a map)

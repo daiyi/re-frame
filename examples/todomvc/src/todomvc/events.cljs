@@ -85,9 +85,9 @@
 
   ;; The event handler function.
   ;; The "path" interceptor in `todo-interceptors` means 1st parameter is :todos
-  (fn [todos [text]]
+  (fn [todos [text time]]
     (let [id (allocate-next-id todos)]
-      (assoc todos id {:id id :title text :done false}))))
+      (assoc todos id {:id id :title text :time time :done false}))))
 
 
 (reg-event-db
@@ -100,8 +100,9 @@
 (reg-event-db
   :save
   todo-interceptors
-  (fn [todos [id title]]
-    (assoc-in todos [id :title] title)))
+  (fn [todos [id title time]]
+    (reduce-kv assoc-in todos
+      {[id :title] title [id :time] time})))
 
 
 (reg-event-db

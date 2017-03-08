@@ -199,7 +199,19 @@ label[for='toggle-all'] {
 #todo-list li label {
 	white-space: pre-line;
 	word-break: break-all;
-	padding: 15px 60px 15px 15px;
+	padding: 15px 60px 5px 15px;
+	margin-left: 45px;
+	display: block;
+	line-height: 1.2;
+	transition: color 0.4s;
+}
+
+#todo-list li .last-saved-time {
+	font-size: 12px;
+	font-family: monospace;
+	white-space: pre-line;
+	word-break: break-all;
+	padding: 5px 60px 15px 15px;
 	margin-left: 45px;
 	display: block;
 	line-height: 1.2;
@@ -211,6 +223,10 @@ label[for='toggle-all'] {
 	text-decoration: line-through;
 }
 
+#todo-list li.completed .last-saved-time {
+	color: #d9d9d9;
+}
+
 #todo-list li .destroy {
 	display: none;
 	position: absolute;
@@ -218,7 +234,7 @@ label[for='toggle-all'] {
 	right: 10px;
 	bottom: 0;
 	width: 40px;
-	height: 40px;
+	height: 55px;
 	margin: auto 0;
 	font-size: 30px;
 	color: #cc9a9a;
@@ -376,4 +392,3 @@ html #clear-completed:active {
 		bottom: 10px;
 	}
 }
-
