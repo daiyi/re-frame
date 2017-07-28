@@ -1,6 +1,5 @@
-* Introduction
+Introduction
 
- - [This Repo's README](../README.md)
  - [app-db (Application State)](ApplicationState.md)
  - [First Code Walk-Through](CodeWalkthrough.md)
  - [Mental Model Omnibus](MentalModelOmnibus.md)
@@ -14,11 +13,13 @@
  - [Effects](Effects.md)
  - [Coeffects](Coeffects.md)
 
+
 * Subscriptions
 
  - [Infographic](SubscriptionInfographic.md)
  - [Correcting a wrong](SubscriptionsCleanup.md)
  - [Flow Mechanics](SubscriptionFlow.md)
+
 
 * App Structure
 
@@ -49,6 +50,7 @@
  - [Using Stateful JS Components](Using-Stateful-JS-Components.md)
  - [The re-frame Logo](The-re-frame-logo.md)
  - [Code Of Conduct](Code-Of-Conduct.md)
+ 
  
 <!--  We put these at the end so that there is nothing for doctoc to generate. -->
  <!-- START doctoc -->
