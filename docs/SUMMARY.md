@@ -39,10 +39,15 @@
 ## Miscellaneous
 
 * [FAQs](FAQs/README.md)
+  * [How can I inspect app-db?](/FAQs/Inspecting-app-db.md)
+  * [How can I use a subscription in an Event Handler?](/FAQs/UseASubscriptionInAnEventHandler.md)
+  * [How do I use logging method X?](/FAQs/Logging.md)
 * [External Resources](External-Resources.md)
 * [Eek! Performance Problems](Performance-Problems.md)
 * [Solve the CPU hog problem](Solve-the-CPU-hog-problem.md)
 * [Using Stateful JS Components](Using-Stateful-JS-Components.md)
 * [The re-frame Logo](The-re-frame-logo.md)
 * [Code Of Conduct](Code-Of-Conduct.md)
+
+
 
