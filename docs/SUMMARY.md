@@ -1,7 +1,8 @@
 # Summary
 
-* [Introduction](/introduction.md)
-* [A re-frame Walkthrough](/README.md)
+* [Introduction](/README.md)
+* [Why re-frame?](/The-Pitch.md)
+* [A re-frame Walkthrough](/Introduction.md)
 * [app-db \(Application State\)](ApplicationState.md)
 * [First Code Walk-Through](CodeWalkthrough.md)
 * [Mental Model Omnibus](MentalModelOmnibus.md)
@@ -49,6 +50,4 @@
 * [Using Stateful JS Components](Using-Stateful-JS-Components.md)
 * [The re-frame Logo](The-re-frame-logo.md)
 * [Code Of Conduct](Code-Of-Conduct.md)
-
-
 
