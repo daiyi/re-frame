@@ -1,4 +1,4 @@
 {
     "root": "docs",
-    "plugins": ["toggle-headers"]
+    "plugins": ["collapsible-menu"]
 }
