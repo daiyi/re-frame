@@ -1,4 +1,4 @@
 {
     "root": "docs",
-    "plugins": ["expand-active-chapter"]
+    "plugins": ["toggle-headers"]
 }
