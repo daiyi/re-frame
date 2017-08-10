@@ -1,7 +1,6 @@
 
-> In a rush? You can get away with skipping this page on the first pass. <br>
-> But remember to cycle back to it later. It contains useful insights.<br>
-> Next page: [Effectful Handlers](EffectfulHandlers.md)
+> In a rush? You can get away with skipping this page on the first pass.
+> But remember to cycle back to it later. It contains useful insights.
 
 ## Mental Model Omnibus
 

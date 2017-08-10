@@ -1,11 +1,24 @@
 # Summary
 
+## Overview
+
 * [Introduction](/README.md)
 * [Why re-frame?](/The-Pitch.md)
 * [A re-frame Walkthrough](/Introduction.md)
 * [app-db \(Application State\)](ApplicationState.md)
 * [First Code Walk-Through](CodeWalkthrough.md)
 * [Mental Model Omnibus](MentalModelOmnibus.md)
+    - [What is the problem?](MentalModelOmnibus.md#what-is-the-problem)
+    - [Guiding Philosophy](MentalModelOmnibus.md#guiding-philosophy)
+    - [It does Event Sourcing](MentalModelOmnibus.md#it-does-event-sourcing)
+    - [It does a reduce](MentalModelOmnibus.md#it-does-a-reduce)
+    - [Derived Data All The Way Down](MentalModelOmnibus.md#derived-data-all-the-way-down)
+    - [It does FSM](MentalModelOmnibus.md#it-does-fsm)
+    - [Interconnections](MentalModelOmnibus.md#interconnections)
+    - [Full Stack](MentalModelOmnibus.md#full-stack)
+    - [What Of This Romance?](MentalModelOmnibus.md#what-of-this-romance)
+
+
 
 ## Event Handlers
 
@@ -38,12 +51,12 @@
 * [Debugging Event Handlers](Debugging-Event-Handlers.md)
 * [Debugging](Debugging.md)
 
-## Miscellaneous
+## [FAQs](FAQs/README.md)
+* [How can I inspect app-db?](/FAQs/Inspecting-app-db.md)
+* [How can I use a subscription in an Event Handler?](/FAQs/UseASubscriptionInAnEventHandler.md)
+* [How do I use logging method X?](/FAQs/Logging.md)
 
-* [FAQs](FAQs/README.md)
-  * [How can I inspect app-db?](/FAQs/Inspecting-app-db.md)
-  * [How can I use a subscription in an Event Handler?](/FAQs/UseASubscriptionInAnEventHandler.md)
-  * [How do I use logging method X?](/FAQs/Logging.md)
+## Miscellaneous
 * [External Resources](External-Resources.md)
 * [Eek! Performance Problems](Performance-Problems.md)
 * [Solve the CPU hog problem](Solve-the-CPU-hog-problem.md)
