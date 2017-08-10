@@ -1,6 +1,7 @@
 # Summary
 
-* [Introduction](README.md)
+* [Introduction](/introduction.md)
+* [A re-frame Walkthrough](/README.md)
 * [app-db \(Application State\)](ApplicationState.md)
 * [First Code Walk-Through](CodeWalkthrough.md)
 * [Mental Model Omnibus](MentalModelOmnibus.md)
