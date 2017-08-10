@@ -112,5 +112,31 @@ a powerful hot-loading development story. And, yes, it has
 fun specialist tooling, and a community,
 and useful 3rd party libraries.
 
+## It Leverages Data
 
+You might already know that ClojureScript is a modern lisp, and that
+lisps are **homoiconic**. If not, you do now.
+
+The homoiconic bit is significant. It means you program in a lisp by creating and
+assembling lisp data structures. Think about that. You are **programming in data**.
+The functions which later manipulate data, start as data.
+
+Clojure programmers place particular
+emphasis on the primacy of data. When they aren't re-watching Rich Hickey videos,
+and wishing their hair was darker and more curly,
+they meditate on aphorisms like "Data is the ultimate in late binding".
+
+I cannot stress enough what a big deal this is. It can seem
+like a syntax curiosity at first but, when the penny drops for
+you on this, it tends to be a profound moment. And once you
+understand the importance of this concept at the language level,
+you naturally want to leverage similar power at the library level.
+
+So, it will come as no surprise, then, to know that re-frame has a
+data oriented design. Events are data. Effects are data. DOM is data.
+The functions which transform data are registered and looked up via
+data. Interceptors (data) are preferred over middleware (higher
+order functions). Etc.
+
+Data - that's the way we roll.
 
